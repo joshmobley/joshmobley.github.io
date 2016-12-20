@@ -1,0 +1,81 @@
+.home-header, .small-header{
+    background: #111;
+    color: #fff;
+    position: relative;
+    z-index: 9999;
+    @include clearfix;
+
+    a{ color: #fff; }
+}
+
+.home-header{
+    padding: 4em;
+
+    h1{
+        margin-bottom: 1em;
+    }
+
+    p{
+        max-width: 600px;
+    }
+
+    img{
+        max-width: 300px;
+        border: none;
+    }
+}
+
+.small-header{
+    background: #111;
+    color: #fff;
+    padding: 0 2em;
+    
+    .logo{
+        position: relative;
+        top: .5em;
+        float: left;
+        @extend .type-marker;
+        font-size: 1.4em;
+        
+    }
+
+    nav{
+        float: right;
+        width: 75%;
+        padding: 0;
+        text-align: right;
+        @extend .type-headline;
+        text-transform: uppercase;
+        font-weight: 100;
+        
+        li{
+            display: inline-block;
+            
+            a{ 
+                padding: 1em; 
+                display: inline-block;
+
+                &.active{
+                    background: #666;
+
+                    &:hover{
+                        background: #666;
+                    }
+                }
+
+                &:hover{
+                    background: #333;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1000px){
+    
+
+    .home-header .content{
+        padding-left: 35%;
+        padding-top: 2em;
+    }
+}

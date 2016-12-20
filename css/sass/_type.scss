@@ -1,0 +1,131 @@
+.type-marker{
+    font-family: 'Permanent Marker', cursive;
+}
+
+.type-headline{
+    font-family: 'Oswald', sans-serif;
+}
+
+.type-body{
+    font-family: 'Droid Serif', serif;
+}
+
+h1{
+    @extend .type-marker;
+    font-size: 3em;
+}
+
+h2{
+    @extend .type-headline;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    margin-bottom: 2em;
+    line-height: 1.4em;
+}
+
+h3{
+    @extend .type-headline;
+    font-size: 1.2em;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.2em;
+
+    + h4{
+        border-top: 1px solid #ccc;
+        margin-top: -.5em;
+        padding-top: .5em;
+        letter-spacing: .5px;
+        font-weight: 300;
+    }
+}
+
+h4{
+    @extend .type-headline;
+    margin-bottom: 1em;
+}
+
+p{
+    @extend .type-body;
+    line-height: 1.4em;
+
+    + p{
+        margin-top: 2em;
+    }
+}
+
+a{
+    text-decoration: none;
+    color: #111;
+    transition: color .3s;
+
+    &:hover{
+        color: orange;
+    }
+
+    &.button{
+        padding: .75em 1.5em;
+        background: #ddd;
+        color: #fff;
+        display: inline-block;
+        @extend .type-headline;
+        text-transform: uppercase;
+        font-size: .9em;
+        letter-spacing: 1px;
+        font-weight: 300;
+        margin-top: 1em;
+        border-radius: 3px;
+        transition: background .3s;
+
+        &-dark{
+            @extend .button;
+            background: #555;
+        }
+
+        &:hover{
+            background: #666;
+        }
+    }
+}
+
+ol{
+    margin: 2em 0;
+    line-height: 1.4em;
+    font-family: 'Droid Serif', serif;
+
+    li{
+        margin: 0 2em;
+        list-style: decimal;
+
+        + li{
+            margin-top: 1em;
+        }
+
+        ul li{
+            margin-top: 1em;
+        }
+    }
+}
+
+ul li{
+    list-style: disc;
+}
+
+strong{
+    font-weight: 700;
+}
+
+em{
+    font-style: italic;
+}
+
+
+em strong{
+    display: block;
+    padding: 1em;
+    background: #fff79a;
+    font-style: normal;
+    margin: 2em 0;
+    font-weight: 400;
+
+}

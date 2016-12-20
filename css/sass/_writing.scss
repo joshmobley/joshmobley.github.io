@@ -1,0 +1,139 @@
+
+.writing{
+    h1{ 
+        margin-bottom: 1em; 
+        max-width: 600px;    
+    }
+
+    h2{
+        max-width: 600px;
+
+        + p {
+            margin-top: -2em;
+            border-top: 1px solid #ccc;
+            padding-top: .75em;
+        }
+    }
+
+    header{
+        margin-bottom: 4em;
+    }
+
+    p + h3, pre + h3, div + h3 {
+        padding-top: 4em;
+        margin-top: 4em;
+        border-top: 1px solid #eee;
+    }
+
+    p + h4{
+        margin-top: 2em;
+    }
+
+    a{
+        border-bottom: 1px solid orange;
+    }
+
+    .toc-js{
+
+        h3{
+            margin: 0 1.5em;
+        }
+
+
+        li{
+            width: 100%;
+            border-top: 1px solid #ddd;
+            margin: 0;
+            list-style: none;
+        }
+
+        a{ 
+            border: none; 
+            padding: .5em 2em;
+            display: block;
+            transition: background .3s;
+
+            &.active{
+                background: #ddd;
+            }
+            
+            &:hover{
+                color: #111;
+                background: #ddd;
+            }
+            
+        }
+    }
+
+    .model-close{ border: none;}
+}
+
+
+.model-gallery{
+    float: left;
+    width: 50%;
+}
+
+.model-gallery-image{
+    position: relative;
+}
+
+.model-gallery-prev, .model-gallery-next{
+    position: absolute;
+    top: 50%;
+    margin-top: -.5em;
+    color: #fff;
+    @extend .type-body;
+    padding: .5em;
+    background: #555;
+    border-radius: 3px;
+    transition: .3s;
+
+    &:hover{
+        background: #666;
+        color: #fff;
+    }
+}
+
+.model-gallery-prev{
+    left: -2.5em;
+}
+
+.model-gallery-next{
+    right: -2.5em;
+}
+
+.model-close{
+    @extend .type-body;
+    color: #fff;
+    position: fixed;
+    right: 2em;
+    top: 2em;
+}
+
+.model-content{
+    float: right;
+    color: #fff;
+    width: 45%;
+}
+
+@media screen and (min-width: 800px){
+
+    .writing{
+        margin: 2em auto 2em 25%;
+    }
+    
+    .toc-js{
+        position: fixed;
+        left: 0;
+        top: 0;
+        background: #eee;
+        height: 100vh;
+        width: 20%;
+        padding: 5em 0 2em;
+        border-right: 1px solid #ddd;
+        box-sizing: border-box;
+        transition: all .3s;
+    }
+
+}

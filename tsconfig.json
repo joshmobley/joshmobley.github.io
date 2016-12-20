@@ -1,0 +1,9 @@
+{
+    "files": [
+        "js/src/scripts.ts"
+    ],
+    "compilerOptions": {
+        "noImplicitAny": true,
+        "module": "AMD"
+    }
+}

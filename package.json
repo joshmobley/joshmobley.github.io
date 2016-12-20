@@ -1,0 +1,20 @@
+{
+  "name": "josh-mobley",
+  "version": "1.0.0",
+  "devDependencies": {
+    "@types/jquery": "^2.0.33",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean-css": "^2.0.13",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^2.2.0",
+    "gulp-typescript": "^3.0.2",
+    "gulp-uglify": "^2.0.0"
+  },
+  "dependencies": {
+    "highlight.js": "^9.8.0",
+    "jquery": "^3.1.1",
+    "typescript": "^2.0.6",
+    "prismjs": "latest"
+  }
+}

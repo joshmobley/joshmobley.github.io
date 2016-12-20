@@ -1,0 +1,129 @@
+{% include head.html %}
+{% include home-header.html %}
+
+<section class="skills">
+        <ul>
+            <li>HTML</li>
+            <li>Photoshop</li>
+            <li class="bold">Frontend Development</li>
+            <li>Javascript</li>
+            <li>Sketch</li>
+            <li class="bold">Digital Strategy</li>
+            <li>Wordpress</li>
+            <li>Angular</li>
+            <li>CSS</li>
+            <li class="bold">User Experience</li>
+            <li>Git</li>
+            <li>PHP</li>
+            <li>Gulp</li>
+            <li>Typescript</li>
+            <li>CI/CD</li>
+            <li>QUnit</li>
+        </ul>
+    </section>
+
+    <section class="blogs">
+
+        <h2>Recent Writing</h2>
+
+        {% for post in site.categories.writing %}
+            <article class="l-half">
+                <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+                <p>{{ post.excerpt | strip_html }}</p>
+            </article>
+        {% endfor %}
+
+        <a href="#">All writing &rarr;</a>
+
+    </section>  
+
+    <section class="work">
+
+        <h2 class="center-small">Recent Work</h2>
+
+        {% for post in site.categories.work %}
+            <article class="l-third">
+                <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+                <h4>{{ post.clientname }}</h4>
+                <a href="{{ post.url }}">
+                    <img src="{{ site.url }}/assets/{{ post.thumbnail }}" />
+                </a>
+            </article>
+        {% endfor %}
+
+        <article class="l-third">
+            <h3><a href="https://gt.foreignpolicy.com/2016" class="model-open" target="_blank" data-model="fp">Meet the Global Thinkers</a></h3>
+            <h4>Foreign Policy Magazine</h4>
+            <a href="https://gt.foreignpolicy.com/2016" class="model-open" target="_blank" data-model="fp"><img src="work/fp/thumbnail.png" /></a>
+        </article>
+
+        <article class="l-third">
+            <h3><a href="http://pendo.io" class="model-open" target="_blank" data-model="pendo">Rebranding with Pink</a></h3>
+            <h4>Pendo</h4>
+            <a href="http://pendo.io" class="model-open" target="_blank" data-model="pendo"><img src="work/pendo/thumbnail.jpg" /></a>
+        </article>
+
+        <article class="l-third">
+            <h3><a href="https://govhawk.com/product" target="_blank">Legislative Tracking</a></h3>
+            <h4>GovHawk</h4>
+            <a href="https://govhawk.com/product" target="_blank"><img src="work/govhawk/thumbnail.png" /></a>
+        </article>
+
+    </section>
+
+    <section class="community">
+
+        <h2 class="center-small">Community Involvement</h2>
+
+        <div class="l-third">
+            <h3><a href="http://refreshthetriangle.co" target="_blank">Refresh the Triangle</a></h3>
+            <h4>Co-Organizer</h4>
+            <a href="http://refreshthetriangle.co" target="_blank"><img src="community/refresh/thumbnail.jpg" /></a>
+        </div>
+
+        <div class="l-third">
+            <h3><a href="http://letsmakeapodcast.org" target="_blank">Let's Make a Podcast</a></h3>
+            <h4>Co-Host</h4>
+            <a href="http://letsmakeapodcast.org" target="_blank"><img src="community/podcast/thumbnail.jpg" /></a>
+        </div>
+
+        <div class="l-third">
+            <h3><a href="https://www.theironyard.com/locations/raleigh.html" target="_blank">The Iron Yard Raleigh</a></h3>
+            <h4>Advisory Board Member</h4>
+            <a href="https://www.theironyard.com/locations/raleigh.html" target="_blank"><img src="community/tiy/thumbnail.png" /></a>
+        </div>
+
+    </section>
+
+    <section class="contact">
+
+        <dl class="social">
+            <dt><h2>Connect on Social</h2></dt>
+            <dd><a href="#" class="twitter">Twitter</a></dd>
+            <dd><a href="#" class="github">Github</a></dd>
+            <dd><a href="#" class="linkedin">Linkedin</a></dd>
+        </dl>
+        
+        <form action="https://formspree.io/jmob1986@gmail.com" method="POST">
+
+            <div class="form-content">
+            <h2>or Send Me a Note</h2>
+            <fieldset>
+                <label for="name">Full Name</label>
+                <input type="text" name="name" placeholder="Full Name" />
+                <label for="_gotcha">Leave This Field Blank</label>
+                <input type="text" name="_gotcha" style="display: none;" />
+                <label for="email">Email Address</label>
+                <input type="email" name="_replyto" placeholder="Email Address" />
+                <label for="subject">Topic of Conversation</label>
+                <input type="text" name="_subject" placeholder="Topic of Conversation" />
+                <label for="comment">Your Message</label>
+                <textarea name="comment">Write your message here...</textarea>
+                <input type="hidden" name="_format" value="plain" />
+                <input type="submit" value="Send" />
+            </fieldset>
+            </div>
+        </form>
+    </section>
+
+{% include footer.html %}
