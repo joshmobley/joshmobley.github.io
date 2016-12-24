@@ -3,7 +3,7 @@ layout: work
 title: "Rebranding with Pink"
 subtitle: "Assisting Pendo in bringing their new brand to life."
 excerpt: "Website Build &amp; CMS Integration"
-date: 2016-12-18 13:02:02 -0600
+date: 2016-12-16 13:02:02 -0600
 clientname: "Pendo"
 clientsite: "http://pendo.io"
 thumbnail: "assets/work/pendo/thumbnail.jpg"
