@@ -2,7 +2,7 @@
 layout: post
 title: "Simple JavaScript Modules with Require.js"
 subtitle: "A step-by-step guide to breaking down your scripts into pieces for the browser"
-date: 2016-12-19 13:45:02 -0600
+date: 2016-12-21 09:00:00 -0600
 categories: writing
 tags: javascript development
 excerpt: If you've used any CLI's or large javascript frameworks (think Angular, Ember, etc.) you've probably seen and even used javascript modules. When we're dealing with large amounts of javascript, it's easier to parse what's going on when we've encapsulated our functions into bite-sized chunks.
@@ -26,15 +26,15 @@ The first thing to understand is that javascript modules aren't really supported
 
 If you're considering using modules, you're probably already writing in ES2015+ syntax paired with a transpiler (babel, typescript, etc.) If not, know that's a requirement to using modules.
 
-If you're not sure what I'm talking about, check out the [ES2015 documentation](https://babeljs.io/docs/learn-es2015/) on babel's website. That's where you'll want to start.
+If you're not sure what I'm talking about, check out the [ES2015 documentation](https://babeljs.io/docs/learn-es2015/){:target="_blank"} on babel's website. That's where you'll want to start.
 
 ### Module syntax
 
 Today's javascript landscape is pretty fractured. The same is true with modules. 
 
-There are currently a handful of different syntaxes that one could use when writing a module. CommonJS, AMD, systemJS, UMD, and the ES2015 syntax. We're not going to go into detail about the differences or histories behind each approach here, but check out this article to learn some of [the differences between CommonJS, AMD, and ES2015](https://auth0.com/blog/javascript-module-systems-showdown/).
+There are currently a handful of different syntaxes that one could use when writing a module. CommonJS, AMD, systemJS, UMD, and the ES2015 syntax. We're not going to go into detail about the differences or histories behind each approach here, but check out this article to learn some of [the differences between CommonJS, AMD, and ES2015](https://auth0.com/blog/javascript-module-systems-showdown/){:target="_blank"}.
 
-**Require.js supports modules written in the [AMD syntax](http://requirejs.org/docs/whyamd.html), and that's important to know as you set up your project. Ensure whatever transpiler you're using is outputting your modules in AMD syntax.**
+**Require.js supports modules in [AMD syntax](http://requirejs.org/docs/whyamd.html), and that's important to know as you set up your project. Ensure whatever transpiler you're using is configured to output your modules in AMD syntax.**
 
 It's important to understand that just because you're transpiling your modules out to AMD doesn't mean you have to write them in AMD. I'd advise everyone to be writing in ES2015 syntax as that is the approved spec for javascript moving forward.
 
@@ -195,7 +195,7 @@ You might be thinking, but Josh, why would I want to use Require.js when Webpack
 
 Assuming you've already got your transpiler and build process set up, you should be able to integrate require.js with relative ease. 
 
-After [downloading the script](http://requirejs.org/docs/download.html), add it to your top-level scripts directory. For our purposes we'll call that `/js`.
+After [downloading the script](http://requirejs.org/docs/download.html){:target="_blank"}, add it to your top-level scripts directory. For our purposes we'll call that `/js`.
 
 Next, remove whatever scripts you're referencing in your HTML and replace them with Require.js.
 
@@ -219,13 +219,11 @@ import * as $ from jquery;
 
 This syntax looks a little different than what we covered above. Whenever a javascript file includes many functions, you can include them all as a scoped namespace using `import * as (namespace) from (module)`. The `*` wildcard let's our transpiler know that we want the entire contents of that module.
 
-[Learn more about using jQuery with Require.js here.](http://requirejs.org/docs/jquery.html)
+[Learn more about using jQuery with Require.js here.](http://requirejs.org/docs/jquery.html){:target="_blank"}
 
 
-### Testing
+### Testing & Conclusion
 
 Ensuring your modules are being imported properly will be very apparant, either via intellisense in VSCode (or something like it), or at very least inside the console at runtime.
 
-### Conclusion
-
-If you're using a framework, componentizing your scripts is likely baked in. But if you're not, using modules are a real gift when adding a JavaScript layer to your project. Do you have questions or comments about this article? [Ping me on twitter](https://twitter.com/joshmobley) or [send me a note](http://joshmobley.net/#contact).
+If you're using a framework, componentizing your scripts is likely baked in. But if you're not, using modules are a real gift when adding a JavaScript layer to your project.

@@ -1,0 +1,23 @@
+.home{
+
+    section h2 a{
+        font-size: .5em;
+        margin-left: 1em;
+        color: #aaa;
+        font-weight: 100;
+
+        &:hover{
+            color: orange;
+        }
+    }
+
+    #blogs{
+        h3{
+            border-bottom: 1px solid #ddd;
+            padding-bottom: .5em;
+            margin-bottom: .5em;
+        }
+
+    } 
+
+}

@@ -1,0 +1,20 @@
+.archive{
+    padding: 2em 0;
+
+    img{
+        max-width: 150px;
+        float: left;
+        margin-right: 2em;
+    }
+
+    h2{ margin: 0; }
+
+    .post-list{
+        margin: 4em 0;
+    }
+
+    .post-list-item{
+        clear: both;
+        margin-bottom: 4em;
+    }
+}

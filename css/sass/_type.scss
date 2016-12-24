@@ -10,26 +10,28 @@
     font-family: 'Droid Serif', serif;
 }
 
-h1{
+h1, .h1{
     @extend .type-marker;
     font-size: 3em;
 }
 
-h2{
+h2, .h2{
     @extend .type-headline;
-    font-size: 1.4em;
+    font-size: 1.6em;
     text-transform: uppercase;
     margin-bottom: 2em;
     line-height: 1.4em;
+    letter-spacing: 1px;
 }
 
-h3{
+h3, .h3{
     @extend .type-headline;
     font-size: 1.2em;
     margin-bottom: 1em;
     text-transform: uppercase;
     letter-spacing: 1px;
     line-height: 1.2em;
+    letter-spacing: 1px;
 
     + h4{
         border-top: 1px solid #ccc;
@@ -40,9 +42,10 @@ h3{
     }
 }
 
-h4{
+h4, .h4{
     @extend .type-headline;
     margin-bottom: 1em;
+    letter-spacing: 1px;
 }
 
 p{
@@ -61,6 +64,10 @@ a{
 
     &:hover{
         color: orange;
+    }
+
+    &:visited, &:active{
+        color: #111;
     }
 
     &.button{
@@ -129,3 +136,13 @@ em strong{
     font-weight: 400;
 
 }
+
+
+
+    .meta{
+        margin: 0;
+        @extend .type-headline;
+        font-weight: 300;
+        font-size: .9em;
+        letter-spacing: 1px;
+    }

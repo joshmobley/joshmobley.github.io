@@ -27,13 +27,17 @@ export class TOC{
             
         });
 
-        $('.writing').append(`<div class="toc-js"><h3>Table of Contents</h3><ol></ol></div>`);
+        $('.writing').append(`<div class="toc-js"></div>`);
+        console.log( toc );
+        if( Object.keys(toc).length != 0 ){
+            $('.toc-js').append('<h3>Table of Contents</h3><ol></ol>');
+        }
 
         $.each( toc, function(){
             $('.toc-js ol').append('<li><a href="#' + this['id'] + '">' + this['text'] + '</a></li>' );
         });
 
-        $('.toc-js').append('<a href="/writing.html">&larr; back to writing');
+        $('.toc-js').append('<a class="back-link" href="/writing.html">&larr; back to writing');
 
         $(window).on('scroll', function(){
             let scroll = $(window).scrollTop();

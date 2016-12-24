@@ -1,77 +1,63 @@
 {% include head.html %}
+{% include small-header.html %}
 {% include home-header.html %}
 
-<section class="skills">
-        <ul>
-            <li>HTML</li>
-            <li>Photoshop</li>
-            <li class="bold">Frontend Development</li>
-            <li>Javascript</li>
-            <li>Sketch</li>
-            <li class="bold">Digital Strategy</li>
-            <li>Wordpress</li>
-            <li>Angular</li>
-            <li>CSS</li>
-            <li class="bold">User Experience</li>
-            <li>Git</li>
-            <li>PHP</li>
-            <li>Gulp</li>
-            <li>Typescript</li>
-            <li>CI/CD</li>
-            <li>QUnit</li>
-        </ul>
+<div class="home">
+
+    <section id="about">
+
+        <div class="l-third">
+            <img src="/assets/me.jpg" />
+        </div>
+
+        <div class="l-two-thirds">
+
+        <p class="h1">Hello there!</p>
+
+        <p class="h3">I'm the Director of Technology at <a href="http://newkind.com" target="_blank">New Kind</a>, a branding firm for startups and technology companies.</p>
+
+        <p>I like to <a href="/work.html">build useful and delightful things</a> on the web.</p> 
+        
+        <p>I also like to <a href="#community">bring people together</a> to learn about the latest tools and methods that help move the web forward.</p>
+
+        </div>
     </section>
 
-    <section class="blogs">
+    <section id="blogs">
 
-        <h2>Recent Writing</h2>
+        <h2>Recent Writing 
+            <a href="/writing.html">All writing &rarr;</a>
+        </h2>
 
-        {% for post in site.categories.writing %}
+        {% for post in site.posts limit: 2 %}
             <article class="l-half">
                 <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+                <p class="meta">{{ post.date | date_to_long_string }}</p>
                 <p>{{ post.excerpt | strip_html }}</p>
             </article>
         {% endfor %}
 
-        <a href="#">All writing &rarr;</a>
-
     </section>  
 
-    <section class="work">
+    <section id="work">
 
-        <h2 class="center-small">Recent Work</h2>
+        <h2 class="center-small">Recent Work
+            <a href="/work.html">All work &rarr;</a>
+        </h2>
 
-        {% for post in site.categories.work %}
+        {% for post in site.work  limit: 3 %}
             <article class="l-third">
                 <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
                 <h4>{{ post.clientname }}</h4>
                 <a href="{{ post.url }}">
-                    <img src="{{ site.url }}/assets/{{ post.thumbnail }}" />
+                    <img src="{{ post.thumbnail }}" />
                 </a>
             </article>
         {% endfor %}
 
-        <article class="l-third">
-            <h3><a href="https://gt.foreignpolicy.com/2016" class="model-open" target="_blank" data-model="fp">Meet the Global Thinkers</a></h3>
-            <h4>Foreign Policy Magazine</h4>
-            <a href="https://gt.foreignpolicy.com/2016" class="model-open" target="_blank" data-model="fp"><img src="work/fp/thumbnail.png" /></a>
-        </article>
-
-        <article class="l-third">
-            <h3><a href="http://pendo.io" class="model-open" target="_blank" data-model="pendo">Rebranding with Pink</a></h3>
-            <h4>Pendo</h4>
-            <a href="http://pendo.io" class="model-open" target="_blank" data-model="pendo"><img src="work/pendo/thumbnail.jpg" /></a>
-        </article>
-
-        <article class="l-third">
-            <h3><a href="https://govhawk.com/product" target="_blank">Legislative Tracking</a></h3>
-            <h4>GovHawk</h4>
-            <a href="https://govhawk.com/product" target="_blank"><img src="work/govhawk/thumbnail.png" /></a>
-        </article>
-
     </section>
 
-    <section class="community">
+    <section id="community">
 
         <h2 class="center-small">Community Involvement</h2>
 
@@ -95,13 +81,13 @@
 
     </section>
 
-    <section class="contact">
+    <section id="contact">
 
         <dl class="social">
             <dt><h2>Connect on Social</h2></dt>
-            <dd><a href="#" class="twitter">Twitter</a></dd>
-            <dd><a href="#" class="github">Github</a></dd>
-            <dd><a href="#" class="linkedin">Linkedin</a></dd>
+            <dd><a href="https://twitter.com/{{ site.twitter_username }}" class="twitter" target="_blank">Twitter</a></dd>
+            <dd><a href="https://github.com/{{ site.github_username }}" class="github" target="_blank">Github</a></dd>
+            <dd><a href="https://linkedin.com/in/{{ site.linkedin_username }}" class="linkedin" target="_blank">Linkedin</a></dd>
         </dl>
         
         <form action="https://formspree.io/jmob1986@gmail.com" method="POST">
@@ -125,5 +111,7 @@
             </div>
         </form>
     </section>
+
+</div>
 
 {% include footer.html %}
