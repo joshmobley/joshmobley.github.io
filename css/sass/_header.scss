@@ -6,20 +6,6 @@
     a{ color: #fff; }
 }
 
-nav{
-    position: fixed;
-    height: 100vh;
-    width: 200px;
-    right: -200px;
-    top: 0;
-    transition: right .3s;
-    
-    &.is-visible{
-        right: 0;
-        box-shadow: 0 0 10px #222;
-    }
-}
-
 .menu-toggle{
     position: absolute;
     top: 1em;
@@ -115,6 +101,17 @@ nav{
         background: rgba(0,0,0,.8);
         box-sizing: border-box;
         padding-top: 4em;
+        position: fixed;
+        height: 100vh;
+        width: 200px;
+        right: -200px;
+        top: 0;
+        transition: right .3s;
+
+        &.is-visible{
+            right: 0;
+            box-shadow: 0 0 10px #222;
+        }
         
         li{
             list-style: none;
@@ -123,13 +120,13 @@ nav{
                 display: block;
                 padding: 1em 2em;
 
-                    &.active{
-                        color: orange;
-                    }
+                &.active{
+                    color: orange;
+                }
 
-                    &:hover{
-                        background: #111;
-                    }
+                &:hover{
+                    background: #111;
+                }
             }
         }
     }
@@ -162,7 +159,6 @@ nav{
     .small-header{
         
         .logo{
-
             float: left;
         }
 
