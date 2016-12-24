@@ -1,13 +1,12 @@
 .archive{
     padding: 2em 0;
 
+    h2{ margin: 0; }
+
     img{
         max-width: 150px;
-        float: left;
-        margin-right: 2em;
+        margin: 0 auto 2em;
     }
-
-    h2{ margin: 0; }
 
     .post-list{
         margin: 4em 0;
@@ -17,4 +16,17 @@
         clear: both;
         margin-bottom: 4em;
     }
+}
+
+@media screen and (min-width: 800px){
+
+    .archive{
+
+        img{
+            float: left;
+            margin-right: 2em;
+        }
+
+    }
+    
 }

@@ -1,5 +1,6 @@
 import { TOC } from './toc.module';
 import { formStyles, formSubmit } from './forms.module';
+import header from './header.module';
 import * as $ from 'jquery';
 
 $(document).ready( function(){
@@ -23,40 +24,6 @@ $(document).ready( function(){
         });
     }
 
-    if( $('.home-header').length != 0 ){
-        
-        setTimeout( function(){
-            console.log( 'running');
-            $('.home-header a').toggleClass('is-orange');
-        }, 200);
-
-        
-
-           /* let delay = 0;
-
-             $('.home-header .skills li').each( function(){
-                 let top = Math.floor((Math.random() * (85-15 + 1)) + 15);
-                 let left = Math.floor((Math.random() * (85-15 + 1)) + 15);
-                 let opacity = Math.floor((Math.random() * (3 - 1 + 1)) + 1);
-             
-                 $(this).delay(delay).animate({
-                     'opacity': opacity/10
-                 }).delay(3500).animate({
-                     'opacity': 0
-                 });
-             
-                 $(this).css({
-                     'top': top+'%',
-                     'left': left+'%',
-                 });
-             
-                 delay += 1000;
-                 
-             });*/
-
-
-
-       
-    }
+    header();
 
 });
