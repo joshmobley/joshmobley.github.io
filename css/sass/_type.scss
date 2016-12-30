@@ -2,6 +2,12 @@
     font-family: 'Permanent Marker', cursive;
 }
 
+.type-display{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
 .type-headline{
     font-family: 'Oswald', sans-serif;
 }
@@ -11,8 +17,9 @@
 }
 
 h1, .h1{
-    @extend .type-marker;
+    @extend .type-display;
     font-size: 3em;
+    letter-spacing: 1px;
 }
 
 h2, .h2{
@@ -31,7 +38,6 @@ h3, .h3{
     text-transform: uppercase;
     letter-spacing: 1px;
     line-height: 1.2em;
-    letter-spacing: 1px;
 
     + h4{
         border-top: 1px solid #ccc;

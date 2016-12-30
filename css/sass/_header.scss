@@ -107,6 +107,7 @@
         right: -200px;
         top: 0;
         transition: right .3s;
+        letter-spacing: 1px;
 
         &.is-visible{
             right: 0;
