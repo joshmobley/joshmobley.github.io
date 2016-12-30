@@ -45,3 +45,16 @@
 
     }
 }
+
+@media screen and (min-width: 1600px){
+
+    .home{
+        #about{
+            .l-two-thirds{
+                max-width: 800px;
+                float: left;
+                margin-left: 5%;
+            }
+        }
+    }
+}

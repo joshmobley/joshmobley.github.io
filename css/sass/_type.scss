@@ -152,3 +152,30 @@ em strong{
         font-size: .9em;
         letter-spacing: 1px;
     }
+
+@media screen and (min-width: 1600px){
+    h1, .h1{
+        font-size: 3.6em;
+    }
+
+    h2, .h2{
+        font-size: 2.2em;
+    }
+    
+    h3, .h3{
+        font-size: 1.4em;
+    }
+    
+    h4, .h4{
+        font-size: 1.2em;
+    }
+    
+    p{
+        font-size: 1.2em;
+    }
+    
+    .meta{
+        font-size: 1em;
+    }
+
+}

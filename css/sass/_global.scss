@@ -277,11 +277,20 @@ div.skills{
         .l-header{
             float: right;
             width: 60%;
+            padding-top: 1em;
         }
 
         .l-image{
             float: left;
             width: 33%;
+        }
+    }
+}
+
+@media screen and (min-width: 2000px){
+    .l-third, .l-half{
+        .l-header{
+            padding-top: 2em;
         }
     }
 }
