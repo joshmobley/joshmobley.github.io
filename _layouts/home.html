@@ -47,9 +47,11 @@
 
         {% for post in site.work  limit: 3 %}
             <article class="l-third">
-                <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-                <h4>{{ post.clientname }}</h4>
-                <a href="{{ post.url }}">
+                <div class="l-header">
+                    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+                    <h4>{{ post.clientname }}</h4>
+                </div>
+                <a href="{{ post.url }}" class="l-image">
                     <img src="{{ post.thumbnail }}" />
                 </a>
             </article>
@@ -62,21 +64,27 @@
         <h2 class="center-small">Community Involvement</h2>
 
         <div class="l-third">
-            <h3><a href="http://refreshthetriangle.co" target="_blank">Refresh the Triangle</a></h3>
-            <h4>Co-Organizer</h4>
-            <a href="http://refreshthetriangle.co" target="_blank"><img src="community/refresh/thumbnail.jpg" /></a>
+            <div class="l-header">
+                <h3><a href="http://refreshthetriangle.co" target="_blank">Refresh the Triangle</a></h3>
+                <h4>Co-Organizer</h4>
+            </div>
+            <a href="http://refreshthetriangle.co" target="_blank" class="l-image"><img src="community/refresh/thumbnail.jpg" /></a>
         </div>
 
         <div class="l-third">
-            <h3><a href="http://letsmakeapodcast.org" target="_blank">Let's Make a Podcast</a></h3>
-            <h4>Co-Host</h4>
-            <a href="http://letsmakeapodcast.org" target="_blank"><img src="community/podcast/thumbnail.jpg" /></a>
+            <div class="l-header">
+                <h3><a href="http://letsmakeapodcast.org" target="_blank">Let's Make a Podcast</a></h3>
+                <h4>Co-Host</h4>
+            </div>
+            <a href="http://letsmakeapodcast.org" target="_blank" class="l-image"><img src="community/podcast/thumbnail.jpg" /></a>
         </div>
 
         <div class="l-third">
-            <h3><a href="https://www.theironyard.com/locations/raleigh.html" target="_blank">The Iron Yard Raleigh</a></h3>
-            <h4>Advisory Board Member</h4>
-            <a href="https://www.theironyard.com/locations/raleigh.html" target="_blank"><img src="community/tiy/thumbnail.png" /></a>
+            <div class="l-header">
+                <h3><a href="https://www.theironyard.com/locations/raleigh.html" target="_blank">The Iron Yard Raleigh</a></h3>
+                <h4>Advisory Board Member</h4>
+            </div>
+            <a href="https://www.theironyard.com/locations/raleigh.html" target="_blank" class="l-image"><img src="community/tiy/thumbnail.png" /></a>
         </div>
 
     </section>
