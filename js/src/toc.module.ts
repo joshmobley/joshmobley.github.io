@@ -13,54 +13,73 @@ export class TOC{
         }
 
         let toc : TOC = {};
+        let scrollTop : number;
+        let winHeight : number;
+        let docHeight : number;
+        let hash : string = window.location.hash;
 
-        $('.writing h3').each(function(){
-            let text : string = $(this).text();
-            let id : string = $(this).attr('id');
-            let top : number = $(this).offset().top;
+        function calcHeights(){
 
-            toc[text] = {
-                'text': text,
-                'id': id,
-                'top': top
-            }
-            
-        });
+            scrollTop = $(window).scrollTop();
+            winHeight = $(window).height();
+            docHeight = $(document).height();
 
-        $('.writing').append(`<div class="toc-js"></div>`);
-        console.log( toc );
-        if( Object.keys(toc).length != 0 ){
-            $('.toc-js').append('<h3>Table of Contents</h3><ol></ol>');
+            $('.writing h3').each(function(){
+                let text : string = $(this).text();
+                let id : string = $(this).attr('id');
+                let top : number = $(this).offset().top;
+             
+                toc[text] = {
+                    'text': text,
+                    'id': id,
+                    'top': top
+                }
+
+            });
+
         }
 
-        $.each( toc, function(){
-            $('.toc-js ol').append('<li><a href="#' + this['id'] + '">' + this['text'] + '</a></li>' );
-        });
+        function setActiveState(){
 
-        $('.toc-js').append('<a class="back-link" href="/writing.html">&larr; back to writing');
-
-        $(window).on('scroll', function(){
-            let scroll = $(window).scrollTop();
-            
             $.each( toc, function(){
-                if( scroll >= this['top']-10 ){
+                
+                if( hash == $(this).attr('href') ){
+                    $('.toc-js a[href="#' + this['id'] + '"]').addClass('active');
+                }
+                if( scrollTop >= this['top']-10 ){
                     $('.toc-js .active').removeClass('active');
                     $('.toc-js a[href="#' + this['id'] + '"]').addClass('active');
+                    return true;
+                }else if( scrollTop + winHeight >= ( docHeight - 40 ) ){
+                    $('.toc-js .active').removeClass('active');
+                    $('.toc-js li:last a').addClass('active');
                     return true;
                 }
             });
 
-        });
+        }
 
-        $(window).on('hashchange', function(event){
-            let hash = window.location.hash;
+        function writeTOC(){
+            $('.writing').append(`<div class="toc-js"></div>`);
 
-            $('.toc-js a').each(function(){
-                $(this).removeClass('active');
-                if( hash == $(this).attr('href') ){
-                    $(this).addClass('active');
-                }
+            if( Object.keys(toc).length != 0 ){
+                $('.toc-js').append('<h3>Table of Contents</h3><ol></ol>');
+            }
+
+            $.each( toc, function(){
+                $('.toc-js ol').append('<li><a href="#' + this['id'] + '">' + this['text'] + '</a></li>' );
             });
+
+            $('.toc-js').append('<a class="back-link" href="/writing.html">&larr; back to writing');
+        }
+
+        calcHeights();
+        writeTOC();
+        setActiveState();
+
+        $(window).on('scroll resize hashchange', function(){
+            calcHeights();
+            setActiveState();
         });
         
     }

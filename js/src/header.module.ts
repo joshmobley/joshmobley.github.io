@@ -4,7 +4,7 @@ export default function(){
         
         setTimeout( function(){
             $('.home-header a').toggleClass('is-orange');
-        }, 200);
+        }, 1000);
        
     }
 
