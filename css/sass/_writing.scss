@@ -9,11 +9,12 @@
 
     h2{
         max-width: 600px;
+        margin-bottom: 0;
 
         + p {
-            margin-top: -2em;
             border-top: 1px solid #ccc;
             padding-top: .75em;
+            margin-top: .75em;
         }
     }
 
