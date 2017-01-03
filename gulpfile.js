@@ -20,25 +20,25 @@ var paths = {
 gulp.task( 'styles', function(){
 
     return gulp.src( paths.styles )
-        .pipe( sourcemaps.init() )                                  // initialize sourcemaps
-        .pipe( sass().on('error', sass.logError) )                  // compile sass
+        .pipe( sourcemaps.init() )                        // initialize sourcemaps
+        .pipe( sass().on('error', sass.logError) )        // compile sass
         .pipe( prefix({
             browsers: ['last 2 versions']
-        }))                                                         // browser-prefix CSS
-        .pipe( cleanCSS() )                                         // compress 
-        .pipe( sourcemaps.write() )                                 // write sourcemaps to disk
-        .pipe( gulp.dest( './css/' ) );                        // save to disk
+        }))                                               // browser-prefix CSS
+        .pipe( cleanCSS() )                               // compress 
+        .pipe( sourcemaps.write() )                       // write sourcemaps to disk
+        .pipe( gulp.dest( './css/' ) );                   // save to disk
 
 });
 
 gulp.task( 'scripts', function(){
 
     return gulp.src( paths.scripts )
-        .pipe( sourcemaps.init() )                                  // init sourcemaps
+        .pipe( sourcemaps.init() )                        // init sourcemaps
         .pipe( tsProject() )                     
-        .pipe( uglify() )                                           // compress
-        .pipe( sourcemaps.write() )                                 // write sourcemaps to disk
-        .pipe( gulp.dest( './js/' ) );                         // save to disk
+        .pipe( uglify() )                                 // compress
+        .pipe( sourcemaps.write() )                       // write sourcemaps to disk
+        .pipe( gulp.dest( './js/' ) );                    // save to disk
 
 });    
 
