@@ -3,6 +3,12 @@
 
     h2{ margin: 0; }
 
+    h3{
+        margin-top: 1em;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 1em;
+    }
+
     img{
         max-width: 150px;
         margin: 0 auto 2em;
@@ -25,6 +31,10 @@
         img{
             float: left;
             margin-right: 2em;
+        }
+
+        .pad-left{
+            padding-left: 182px;
         }
 
     }

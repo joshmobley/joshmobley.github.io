@@ -2,7 +2,7 @@
 layout: work
 title: "Meet the Global Thinkers"
 subtitle: "Guiding Foreign Policy Magazine through Angular 2."
-excerpt: "Angular 2 Application Architecture &amp; Consulting"
+type: "Angular 2 Application Architecture &amp; Consulting"
 date: 2016-12-18 13:02:02 -0600
 clientname: "Foreign Policy"
 clientsite: "http://gt.foreignpolicy.com/2016"

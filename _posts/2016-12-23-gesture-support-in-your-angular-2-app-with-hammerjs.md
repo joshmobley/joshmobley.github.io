@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Gesture Support in your Angular 2 App with HammerJS"
-subtite: "Capturing gesture events with ease"
+subtitle: "Capturing gesture events with ease"
 date: 2016-12-23 19:30:00 -0600
 categories: writing
 tags: angular development gesture mobile
