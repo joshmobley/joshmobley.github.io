@@ -44,8 +44,8 @@
         <h2 class="center-small">Recent Work
             <a href="/work.html">All work &rarr;</a>
         </h2>
-
-        {% for post in site.work  limit: 3 %}
+        {% assign posts = site.work | limit: 3 | sort: 'date' | reverse %}
+        {% for post in posts %}
             <article class="l-third">
                 <div class="l-header">
                     <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
