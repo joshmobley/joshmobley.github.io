@@ -7,4 +7,4 @@ title: "Writing"
 collection: posts
 ---
 
-Testing
+I've made a commitment to document more of the methods and tools that I'm learning about. In that spirit, this blog will be a home for posts of all types. I hope you find some use or inspiration from some of them.

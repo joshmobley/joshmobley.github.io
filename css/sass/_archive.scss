@@ -1,10 +1,21 @@
 .archive{
     padding: 2em 0;
 
+    h1{
+        margin-bottom: 1em;
+    }
+    
+    .archive-intro{
+        background: #333;
+        color: #fff;
+        padding: 2em 0;
+        margin-top: -2em;
+    }
+
     h2{ margin: 0; }
 
     h3{
-        margin-top: 1em;
+        margin-top: .5em;
         border-bottom: 1px solid #eee;
         padding-bottom: 1em;
     }
