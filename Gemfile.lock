@@ -45,6 +45,8 @@ PLATFORMS
 DEPENDENCIES
   jekyll (= 3.3.1)
   jekyll-feed (~> 0.6)
+  jekyll-watch (~> 1.1)
+  rouge (~> 1.7)
 
 RUBY VERSION
    ruby 2.0.0p648
