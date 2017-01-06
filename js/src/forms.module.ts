@@ -21,7 +21,7 @@ export function formStyles(){
 }   
     
 export function formSubmit(){
-    $('form [type="submit"]').on('click', function(event){
+    $('#contact-form [type="submit"]').on('click', function(event){
         event.preventDefault();
         let messageData : MessageData = {};
         $('form input, form textarea').each( function(){
