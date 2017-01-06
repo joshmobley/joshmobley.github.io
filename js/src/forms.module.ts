@@ -59,9 +59,19 @@ export function formSubmit(){
                 }
             );
         }).fail( function(){
-            $('form h2')
-                .after('<p class="error-msg" style="display: none;">Sorry, but something went wrong. Please try again.</p>');
-            $('form .error-msg').fadeIn();
+            if( $('form .error-msg').length == 0 ){
+                $('form h2')
+                    .after('<p class="error-msg" style="display: none;">Sorry, but something went wrong. Please try again.</p>');
+                $('form .error-msg').fadeIn();
+            }else{
+                $('form .error-msg')
+                    .fadeOut(250)
+                    .fadeIn(250)
+                    .fadeOut(250)
+                    .fadeIn(250)
+                    .fadeOut(250)
+                    .fadeIn(250);
+            }
         });
     });
 }
