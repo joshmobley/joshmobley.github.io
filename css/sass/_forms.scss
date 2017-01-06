@@ -56,3 +56,21 @@ form{
     }
 
 }
+
+#mc_embed_signup{
+
+    form{
+        max-width: none;
+        padding: 4em 0;
+        border: none;
+        border-top: 1px solid #eee;
+
+        input{
+            max-width: 500px;
+        }   
+
+        p{
+            margin-bottom: 2em;
+        }
+    }
+}
