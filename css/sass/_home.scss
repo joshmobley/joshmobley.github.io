@@ -20,8 +20,13 @@
         }
     }
 
+    #about .h2{
+        margin-bottom: 0;
+    }
+
     #contact h2{
         text-align: left;
+        max-width: 16em;
     }
 
     #blogs{
