@@ -21,14 +21,17 @@
     }
 
     #about{
+
         .h2{
-            max-width: 16em;
             margin-bottom: 0;
+            max-width: 16em;
         }
 
-        p{
-            max-width: 30em;
+        img{
+            max-width: 400px;
+            width: 100%;
         }
+
     }
 
     #contact h2{
