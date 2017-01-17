@@ -20,9 +20,15 @@
         }
     }
 
-    #about .h2{
-        max-width: 16em;
-        margin-bottom: 0;
+    #about{
+        .h2{
+            max-width: 16em;
+            margin-bottom: 0;
+        }
+
+        p{
+            max-width: 30em;
+        }
     }
 
     #contact h2{
