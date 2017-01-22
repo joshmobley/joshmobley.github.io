@@ -5,6 +5,7 @@
 layout: archive
 title: "Work"
 collection: work
+excerpt: "My portfolio of recent projects."
 ---
 
 I approach my work through multiple lenses. Starting my career as a UX Designer, I have a heart and passion for building experience that are intuitive and easy to use. Constantly using data and human-interaction to determine what works well for people is paramount.
