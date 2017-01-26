@@ -14,7 +14,8 @@
   "dependencies": {
     "highlight.js": "^9.8.0",
     "jquery": "^3.1.1",
-    "typescript": "latest",
-    "prismjs": "latest"
+    "lodash.debounce": "^4.0.8",
+    "prismjs": "latest",
+    "typescript": "latest"
   }
 }

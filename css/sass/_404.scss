@@ -1,0 +1,48 @@
+#page-404{
+    h1{
+        padding: 2em 0;
+        text-align: center;
+        background: orange;
+        background-size: 200px;
+        display: block;
+        position: relative;
+
+        span{
+            display: block;
+            font-size: .3em;
+            margin-top: .5em;
+        }
+
+        &:after{
+            content: '';
+            display: block;
+            background: url('../assets/dog.png') no-repeat center;
+            background-size: contain;
+            height: 200px;
+            width: 200px;
+            top: 50%;
+            left: 50%;
+            margin-left: -100px;
+            margin-top: -100px;
+            opacity: .2;
+            position: absolute;
+        }
+    }
+
+    > h2{
+        background: #111;
+        color: #fff;
+        text-align: center;
+
+        .wrapper{
+            display: block;
+            margin-top: 0;
+        }
+    }
+
+    .button{ margin: 0 auto; }
+
+    .post-list{
+        margin-top: 0;
+    }
+}

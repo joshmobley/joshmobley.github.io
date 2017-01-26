@@ -84,6 +84,7 @@
     position: relative;
     z-index: 9999;
     min-height: 3em;
+    box-sizing: border-box;
     
     .logo{
         position: relative;
