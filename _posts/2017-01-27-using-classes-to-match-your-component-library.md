@@ -2,7 +2,7 @@
 layout: post
 title: "Extend Your Component Library with JavaScript Classes"
 subtitle: "Creating consistency across your HTML, CSS, and JS"
-date: 2017-1-12 18:30:00 -0600
+date: 2017-01-27 14:00:00 -0500
 categories: writing
 tags: javascript development css architecture
 excerpt: "Recently when assisting on an Angular 2 project, one of the requirements included gesture support for mobile devices, specifically swipe. Luckily, Angular 2 ships with some native support for HammerJS, a javascript gesture library."
@@ -69,7 +69,7 @@ So how do we leverage classes to help us?
 
 So let's imagine that we're working on a project that includes a gallery as part of the UI. In many projects, you'll just find one large javascript (often jQuery) file that includes some code that instructs our gallery on how to behave. Perhaps you're using a build tool like gulp/grunt to modularize your javascript a bit, and have that code split into it's own js file, that's being concatinated together at build time. 
 
-Consider this: what if your JavaScript was as expressive as your HTML?
+But what if your JavaScript was as _expressive_ as your HTML?
 
 For example perhaps your gallery.js/ts looks something like this:
 
@@ -162,7 +162,11 @@ $(document).ready(function(){
 });
 ```
 
-Now you might be thinking "These two snippets of code don't look all that different...and if anything, I don't want to initiate a module loader just to run some jQuery". I hear you, but consider this. If you've got a component library with lets say 25-50 components in it, and half of those require some javascript enhancement, wouldn't it make life easier for those who are working with you on the project to namespace your javascript to match your SASS/HTML? I think it would. 
+Now you might be thinking "These two snippets of code don't look all that different...and if anything, I don't want to initiate a module loader just to run some jQuery". I hear you, but consider this. If you've got a component library with lets say 25-50 components in it, and half of those require some javascript enhancement, wouldn't it make life easier for those who are working with you on the project to namespace your javascript to match your SASS/HTML? I think it might. 
 
 That being said, I'm trying this for the first time on a project that's in-progress, but so far I like where it's headed. It's easy to look at my file system and know exactly where to look to see relevant javascript code for a specific piece of functionality.
+
+### Conclusion
+
+I'm not suggesting this is the next design pattern that will blow the world away, but it might solve a specific problem when refactoring a huge piece of jQuery or when authoring a javascript layer on top of a popular CMS. Give it a spin and let me know what you think!
 
