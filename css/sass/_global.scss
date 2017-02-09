@@ -249,7 +249,7 @@ div.skills{
         float: left;
         padding-right: 5%;
 
-        &:nth-child( 3n + 1 ){
+        &:nth-child( 4n ){
             padding-right: 0;
         }
     }
