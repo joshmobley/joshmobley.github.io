@@ -5,7 +5,7 @@ subtitle: "Saving time and building better sites with performance budgets"
 date: 2015-02-25 09:00:00 -0600
 categories: writing
 tags: performance, development, design thinking
-excerpt: If you've used any CLI's or large javascript frameworks (think Angular, Ember, etc.) you've probably seen and even used javascript modules. When we're dealing with large amounts of javascript, it's easier to parse what's going on when we've encapsulated our functions into bite-sized chunks.
+excerpt: Let’s move performance to the front of the design process. No longer should it have to wait at the end of the line to be noticed, when it can help us early in the design process.
 
 ---
 I’ll start with a question.
