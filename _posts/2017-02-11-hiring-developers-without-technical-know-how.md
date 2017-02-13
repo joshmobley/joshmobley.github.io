@@ -2,7 +2,6 @@
 layout: post
 title: "Hiring Developers Without Technical Know-How"
 subtitle: "You don't have to gamble on an important hire"
-date: 2017-02-10 22:00:00 -0400
 categories: writing
 tags: hiring development culture
 excerpt: "As someone who's been working on the web for close to a decade, I've been in the position of hiring developers off and on throughout my career. Even in large-market cities, it can be a challenge."
