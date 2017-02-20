@@ -7,21 +7,21 @@
     <section id="about">
 
         <span></span>
+        
         <div class="l-half">
-            <img src="/assets/me.jpg" />
+            <img src="/assets/me.jpg" alt="Josh Mobley - Headshot" />
         </div>
 
         <div class="l-half">
 
-        <p class="h2">I'm a digital strategist and developer.</p>
+            <p class="h2">I'm a digital strategist and developer.</p>
         
-        <p>Opportunities to <a href="/work.html">partner with a team and help lead others</a> through the design process from start to finish is where I thrive.</p>
+            <p>Opportunities to <a href="/work.html">partner with a team and help lead others</a> through the design process from start to finish is where I thrive.</p>
         
-        <p>Fearless exploration of challenging problems, crafting cohesive design systems, and thoughtful execution are all fundamental to creating meaningful experiences for people.</p> 
+            <p>Fearless exploration of challenging problems, crafting cohesive design systems, and thoughtful execution are all fundamental to creating meaningful experiences for people.</p> 
         
-
-
         </div>
+
     </section>
 
     <section id="blogs">
@@ -53,7 +53,7 @@
                     <h4>{{ post.clientname }}</h4>
                 </div>
                 <a href="{{ post.url }}" class="l-image">
-                    <img src="{{ post.thumbnail }}" />
+                    <img src="{{ post.thumbnail }}" alt="{{ post.title }} - Logo" />
                 </a>
             </article>
         {% endfor %}
@@ -69,7 +69,7 @@
                 <h3><a href="http://refreshthetriangle.co" target="_blank">Refresh the Triangle</a></h3>
                 <h4>Co-Organizer</h4>
             </div>
-            <a href="http://refreshthetriangle.co" target="_blank" class="l-image"><img src="community/refresh/thumbnail.jpg" /></a>
+            <a href="http://refreshthetriangle.co" target="_blank" class="l-image"><img src="community/refresh/thumbnail.jpg" alt="Refresh the Triangle - Logo" /></a>
         </div>
 
         <div class="l-third">
@@ -77,7 +77,7 @@
                 <h3><a href="http://letsmakeapodcast.org" target="_blank">Let's Make a Podcast</a></h3>
                 <h4>Co-Host</h4>
             </div>
-            <a href="http://letsmakeapodcast.org" target="_blank" class="l-image"><img src="community/podcast/thumbnail.jpg" /></a>
+            <a href="http://letsmakeapodcast.org" target="_blank" class="l-image"><img src="community/podcast/thumbnail.jpg" alt="Let's Make a Podcast - Logo" /></a>
         </div>
 
         <div class="l-third">
@@ -85,7 +85,7 @@
                 <h3><a href="https://www.theironyard.com/locations/raleigh.html" target="_blank">The Iron Yard Raleigh</a></h3>
                 <h4>Advisory Board Member</h4>
             </div>
-            <a href="https://www.theironyard.com/locations/raleigh.html" target="_blank" class="l-image"><img src="community/tiy/thumbnail.jpg" /></a>
+            <a href="https://www.theironyard.com/locations/raleigh.html" target="_blank" class="l-image"><img src="community/tiy/thumbnail.jpg" alt="The Iron Yard - Logo" /></a>
         </div>
 
     </section>
@@ -96,29 +96,31 @@
             <dt><h2>Connect on Social</h2></dt>
             <dd><a href="https://twitter.com/{{ site.twitter_username }}" class="twitter" target="_blank">Twitter</a></dd>
             <dd><a href="https://github.com/{{ site.github_username }}" class="github" target="_blank">Github</a></dd>
-            <dd><a href="https://linkedin.com/in/{{ site.linkedin_username }}" class="linkedin" target="_blank">Linkedin</a></dd>
+            <dd><a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" class="linkedin" target="_blank">Linkedin</a></dd>
         </dl>
         
         <form action="https://formspree.io/jmob1986@gmail.com" method="POST" id="contact-form">
 
             <div class="form-content">
-            <h2>or Send Me a Note</h2>
-            <fieldset>
-                <label for="name">Full Name</label>
-                <input type="text" name="name" placeholder="Full Name" />
-                <label for="_gotcha">Leave This Field Blank</label>
-                <input type="text" name="_gotcha" style="display: none;" />
-                <label for="email">Email Address</label>
-                <input type="email" name="_replyto" placeholder="Email Address" />
-                <label for="subject">Topic of Conversation</label>
-                <input type="text" name="_subject" placeholder="Topic of Conversation" />
-                <label for="comment">Your Message</label>
-                <textarea name="comment">Write your message here...</textarea>
-                <input type="hidden" name="_format" value="plain" />
-                <input type="submit" value="Send" />
-            </fieldset>
+                <h2>or Send Me a Note</h2>
+                <fieldset>
+                    <label for="name">Full Name</label>
+                    <input type="text" name="name" placeholder="Full Name" />
+                    <label for="_gotcha">Leave This Field Blank</label>
+                    <input type="text" name="_gotcha" style="display: none;" />
+                    <label for="email">Email Address</label>
+                    <input type="email" name="_replyto" placeholder="Email Address" />
+                    <label for="subject">Topic of Conversation</label>
+                    <input type="text" name="_subject" placeholder="Topic of Conversation" />
+                    <label for="comment">Your Message</label>
+                    <textarea name="comment">Write your message here...</textarea>
+                    <input type="hidden" name="_format" value="plain" />
+                    <input type="submit" value="Send" />
+                </fieldset>
             </div>
+
         </form>
+
     </section>
 
 </div>

@@ -20,4 +20,5 @@ group :jekyll_plugins do
    gem "jekyll-feed", "~> 0.6"
    gem "rouge", "~> 1.7"
    gem "jekyll-watch", "~> 1.1"
+   gem "html-proofer", "~> 3.4.0"
 end

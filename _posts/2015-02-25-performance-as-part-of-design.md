@@ -59,9 +59,9 @@ So now we know we have ~ 910kb to devote to typography and images. This gives ou
 
 The other option, is to use data that has been compiled about average file sizes in 2014. When we’re unsure about how large our site might be, this can be a good option to get a ballpark number to begin with. SitePoint tracks this data, and you can find it here: [www.sitepoint.com/average-page-weight-increases-15-2014/](http://www.sitepoint.com/average-page-weight-increases-15-2014/){:target="_blank"}
 
-### Calculator Tool
+<!--### Calculator Tool
 
-In writing this blog post, I thought, “Man, it would be great if someone had put together a little calculator to help people get started with this.” No one had, so I’ve started one myself. It’s pretty rough around the edges right now, but give it a spin and let me know what you think. You can find it here: [www.joshmobley.net/tools/performance-calculator](www.joshmobley.net/tools/performance-calculator){:target="_blank"}
+In writing this blog post, I thought, “Man, it would be great if someone had put together a little calculator to help people get started with this.” No one had, so I’ve started one myself. It’s pretty rough around the edges right now, but give it a spin and let me know what you think. You can find it here: [www.joshmobley.net/tools/performance-calculator](www.joshmobley.net/tools/performance-calculator){:target="_blank"}-->
 
 ### How it helps
 

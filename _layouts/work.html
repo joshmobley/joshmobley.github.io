@@ -16,11 +16,6 @@
         <a href="{{ page.clientsite }}" target="_blank" class="button-dark client-link">Visit {{ page.clientname }}</a>
     </span>
 
-    <!--<div class="tags">
-        <h4>Tagged:</h4>
-        <p class="meta">{{ page.tags | array_to_sentence_string }}</p>
-    </div>-->
-
      <div class="pagination">
          {% if page.previous.url %}
          <div class="prev">
@@ -39,6 +34,5 @@
 </article>
 
 </main>
-
 
 {% include footer.html %}
