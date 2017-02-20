@@ -1,0 +1,21 @@
+machine:
+  environment:
+    NOKOGIRI_USE_SYSTEM_LIBRARIES: true # speeds up installation of html-proofer
+
+dependencies:
+  post:
+    - bundle exec jekyll build
+
+test:
+  post:
+    - bundle exec htmlproofer ./_site --allow-hash-href --check-favicon --check-html --disable-external
+
+deployment:
+  prod:
+    branch: master
+    commands:
+      - git checkout master
+      
+      - rsync -va --delete ./_site username@my-website:/var/html
+
+      ## TODO -- FINISH COMMANDS!
