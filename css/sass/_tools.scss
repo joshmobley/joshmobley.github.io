@@ -1,0 +1,33 @@
+.tools{
+    @extend .work;
+
+    dl{
+        margin: 2em 0;
+    }
+    
+    dt{ 
+        @extend .type-headline;
+        font-size: 1.2em;
+        margin-bottom: 1em;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        line-height: 1.2em;
+        font-weight: 300;
+    }
+
+    dd{ 
+        @extend p;
+        &:before{
+            content: '-';
+            margin-right: 1em;
+        }
+
+        + dd{ margin: .5em 0; }
+
+        + dt{
+            padding-top: 2em;
+            margin-top: 2em;
+            border-top: 1px solid #eee;
+        }
+    }
+}

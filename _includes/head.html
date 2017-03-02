@@ -14,11 +14,11 @@
     <link rel="icon" href="{{ site.url }}/assets/favicon.png">
     
     {% if page.collection == "work" %}
-        <meta name="description" value="{{ page.subtitle }}">
+        <meta name="description" content="{{ page.subtitle }}">
     {% elsif page.excerpt %}
-        <meta name="description" value="{{ page.excerpt }}">
+        <meta name="description" content="{{ page.excerpt }}">
     {% else %}
-        <meta name="description" value="I like to build useful and delightful things on the web.">
+        <meta name="description" content="I like to build useful and delightful things on the web.">
     {% endif %}
 
     <meta name="viewport" content="width=device-width, initial-scale=1">

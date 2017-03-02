@@ -1,0 +1,23 @@
+{% include head.html %}
+{% include small-header.html %}
+
+<main class="tools wrapper">
+
+<article>
+    <header>
+        <h1>{{ page.title }}</h1>
+        <h2>{{ page.excerpt }}</h2>
+        <p class="meta">Last updated: {{ page.last_updated }}</p>
+    </header>
+
+    {{ content }}
+
+    <span class="text-center">
+        <a href="{{ site.url }}/tools.html" target="_blank" class="button-dark client-link">Back to Tools</a>
+    </span>
+</article>
+
+</main>
+
+
+{% include footer.html %}
