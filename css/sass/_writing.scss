@@ -54,6 +54,32 @@
         }
     }
 
+    blockquote{
+        margin: 2em;
+        border-top: 1px solid #666;
+        padding-top: 2em;
+        background: #eee;
+        padding: 2em;
+        position: relative;
+
+        &:before, &:after{
+            content: '\201C';
+            position: absolute;
+            top: .25em;
+            font-size: 2em;
+        }
+
+        &:before{
+            left: .25em;
+        }
+
+        &:after{
+            right: .25em;
+            content: '\201D';
+        }
+
+    }
+
 
     ul li{
             list-style: disc;
