@@ -3,7 +3,7 @@ layout: tools
 title: "Starter Kits"
 subtitle: "Scaffolding to get up and running fast"
 excerpt: "Scaffolding to get up and running fast"
-last_updated: March 1, 2017
+last_updated: April 5, 2017
 ---
 
 These starter kits use JS modules. They come out of the box with require.js to power browser compatibility. For more information, [read my post about RequireJS]({{ site.url }}/writing/2016/12/21/simple-javascript-modules-with-require-js.html).
