@@ -3,7 +3,13 @@
     color: #fff;
     @include clearfix;
 
-    a{ color: #fff; }
+    a{ 
+        color: #ddd; 
+
+        &:hover{
+            color: #fff;
+        }
+    }
 }
 
 .menu-toggle{
@@ -22,7 +28,6 @@
 }
 
 .home-header{
-
     padding: 25vh 10%;
     height: 100vh;
     margin-top: -2.5em;
@@ -79,7 +84,7 @@
 
 .small-header{
     background: #111;
-    color: #fff;
+    color: #ddd;
     padding: 0 2em;
     position: relative;
     z-index: 9999;
@@ -89,9 +94,8 @@
     .logo{
         position: relative;
         top: .5em;
-        @extend .type-marker;
+        @extend .type-body;
         font-size: 1.4em;
-        
     }
 
     nav{
