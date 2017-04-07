@@ -4,12 +4,12 @@ title: "Web Standards in a Post-Standards World"
 subtitle: "The more things change, the more they stay the same"
 categories: writing
 tags: development web standards AEA thoughts industry
-excerpt: "I attended my first 'AEA' in 2011 in Washington, D.C. and the landscape of front-end development and design was a lot different than it is today. It's interesting to consider how the winds of change have blown against the industry for the last few years."
+excerpt: "I attended my first An Event Apart in 2011 in Washington, D.C. and the landscape of front-end development and design was a lot different than it is today. It's interesting to consider how the winds of change have blown against the industry for the last few years."
 ---
 
 ### Intro
 
-The first edition of An Event Apart has just wrapped up this year. As expected, it was a top-flight conference with some of the industry's well-known and influential thinkers. 
+The first edition of [An Event Apart](https://aneventapart.com){:target="_blank"} has just wrapped up this year. As expected, it was a top-flight conference with some of the industry's well-known and influential thinkers. 
 
 I attended my first "AEA" in 2011 in Washington, D.C. and the landscape of front-end development and design was a lot different than it is today. It's interesting to consider how the winds of change have blown against the industry for the last few years.
 
@@ -23,7 +23,7 @@ Often times, an experienced developer was measured by his or her ability to know
 
 #### The Responsive Web
 
-Another pivotal moment in 2011 was the advent of [Responsive Web Design](https://ethanmarcotte.com/){:target="_blank"} by Ethan Marcotte. The practice and consideration of a mobile-first workflow, and crafting one unified experiences regardless of device type or screen size was novel, and uncharted territory.
+Another pivotal moment in 2011 was the advent of Responsive Web Design by [Ethan Marcotte](https://ethanmarcotte.com/){:target="_blank"}. The practice and consideration of a mobile-first workflow, and crafting one unified experiences regardless of device type or screen size was novel, and uncharted territory.
 
 The ability to shift a layout with media queries seemed like magic, and completely changed the way we thought about building for the browser.
 
