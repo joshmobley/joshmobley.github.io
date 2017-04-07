@@ -4,7 +4,7 @@ title: "Web Standards in a Post-Standards World"
 subtitle: "The more things change, the more they stay the same"
 categories: writing
 tags: development web standards AEA thoughts industry
-excerpt: "I attended my first "AEA" in 2011 in Washington, D.C. and the landscape of front-end development and design was a lot different than it is today. It's interesting to consider how the winds of change have blown against the industry for the last few years."
+excerpt: "I attended my first 'AEA' in 2011 in Washington, D.C. and the landscape of front-end development and design was a lot different than it is today. It's interesting to consider how the winds of change have blown against the industry for the last few years."
 ---
 
 ### Intro
