@@ -2,7 +2,7 @@
 layout: work
 title: "An Urban Oasis"
 subtitle: "Helping Cameron Village customize their digital presence."
-type: "Custom Wordpress Build"
+type: "Digital Strategy &amp; Development"
 date: 2015-11-22 13:00:00 -0600
 clientname: "Cameron Village"
 clientsite: "http://shopcameronvillage.com"
