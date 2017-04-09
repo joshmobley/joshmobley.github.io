@@ -4,7 +4,7 @@ title: "Easy WordPress Migration with Docker"
 subtitle: "Local environments in 5 minutes or less"
 categories: writing
 tags: development WordPress docker process tools
-excerpt: "I attended my first An Event Apart in 2011 in Washington, D.C. and the landscape of front-end development and design was a lot different than it is today. It's interesting to consider how the winds of change have blown against the industry for the last few years."
+excerpt: "I've recently upgraded to a new laptop, and wanted to take that opportunity to see if Docker is as great as everyone says it is. One of the first projects I took on was seeing if I could power local WordPress environments entirely with docker containers. Good news, not only does it work, but it's incredibly simple."
 ---
 
 ### Intro
