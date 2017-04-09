@@ -54,17 +54,14 @@ Check out the comments to understand what's going on:
 ```yaml
 # docker-compose.yaml
 
-version: '3' # version of docker-compose to use
+version: '2' # version of docker-compose to use
 
 services: # configuring each container
   db: # name of our mysql container
     image: mysql:5.7 # which image to pull, in this case specifying v. 5.7
     volumes: # data to map to the container
       - ./data:/docker-entrypoint-initdb.d # where to find our data -- we'll talk more about this
-    restart_policy: # what conditions to restart the container
-      delay: 3s
-      max_attempts: 3
-      window: 60s
+    restart: always # always restart the container after reboot
     environment: # environment variables -- mysql options in this case
       MYSQL_ROOT_PASSWORD: wordpress
       MYSQL_DATABASE: wordpress
@@ -77,10 +74,7 @@ services: # configuring each container
     image: wordpress:latest # image used by our container
     ports:
       - "8000:80" # setting our ports for networking
-    restart_policy:
-      delay: 3s
-      max_attempts: 3
-      window: 60s
+    restart: always
     environment:
       WORDPRESS_DB_HOST: db:3306 # default mysql port
       WORDPRESS_DB_PASSWORD: wordpress # matches the password set in the db container
