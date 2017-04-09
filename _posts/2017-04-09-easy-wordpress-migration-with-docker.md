@@ -140,13 +140,13 @@ Here we're telling the `db` container to look in that `data` folder for a `.sql`
 
 That's all it takes! Now every time you spin up a container, it'll use that same database info to populate it, without needing to manually import data.
 
-_** Note: It's worth exporting a basic set of data and keeping that file inside of your project repo. If you do that work up-front, your team won't need to worry about migrating data into their local database ever again! **_
+_**Note: It's worth exporting a basic set of data and keeping that file inside of your project repo. If you do that work up-front, your team won't need to worry about migrating data into their local database ever again!**_
 
 ### Migrate our Uploads
 
 The final piece is to move our images and uploads to our local environment. Generally I just FTP the uploads folders I want from production and copy them into our local instance. You could probably find an easier way to do this if you needed to stamp out environments quickly/frequently, but this works OK for most of my projects.
 
-_** Note: If you want your team to spin up their own environments, I'd highly recommend saving your base uploads somewhere OTHER than the production environment. Having people FTPing into a live instance is a surefire way to accidentally delete all sorts of things. **_
+_**Note: If you want your team to spin up their own environments, I'd highly recommend saving your base uploads somewhere OTHER than the production environment. Having people FTPing into a live instance is a surefire way to accidentally delete all sorts of things.**_
 
 ### Mapping Important Files
 
