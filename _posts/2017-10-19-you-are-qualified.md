@@ -9,6 +9,8 @@ excerpt: "The skills gap is large, talented people are few-and-far-between and p
 
 ### Intro
 
+_** This blog was written back in March, but a recent conversation has pushed me to get it finished. **_
+
 The current state of the technology space is really unique. The skills gap is large, talented people are few-and-far-between and plenty of organizations are scrambling to figure out how to make it work. If you've ever been on the hiring side of developers, designers, or technologists, you quickly realize how slim the choices are.
 
 So let's flip that around. What about when you're on the hunt?
@@ -45,7 +47,7 @@ This is a silly requirements list, folks. And this is probably on the sensible s
 
 ### Read Between the Lines
 
-Unforunately, whoever puts these job descriptions together are generally not the folks in the trenches doing the work day-to-day. Otherwise that example might read something like this:
+Unfortunately, whoever puts these job descriptions together are generally not the folks in the trenches doing the work day-to-day. Otherwise that example might read something like this:
 
 >Strong knowledge of Ruby is required, we build everything in Rails. If you've been building production-ready Rails apps for a couple of years, you're a great fit already.
 >
@@ -57,4 +59,20 @@ More often than not, these job postings are the pie-in-the-sky imaginings of a "
 
 There isn't a magic well of jobless senior-level developers just walking around without jobs, projects, and new opportunities at every turn. Most places are going to have to let their developers learn-up on the job, and I'd argue that if you want highly-engaged developers, that's exactly what you want.
 
-### 
+### Flags, <span style="color:red">Red</span> and Otherwise
+
+So I say all of this to encourage you. If you see a job posting that looks good, but you feel somewhat unqualified for, apply for it. 
+
+That being said, if its a posting that lists a bizarro amount of requirements, I'd approach with caution. That tells us that there's a disconnect from reality somewhere between their engineering team and whoever updated the website. 
+
+Is it just a description that's been on file for 5 years and no one has given it a second look? 
+
+Does an engineering lead really think that it's a reasonable list? 
+
+It's in your best interests to find out and assess whether or not it's indicitative of a larger cultural problem within the organization, and if it's something you can live with or if it's a deal breaker.
+
+### Conclusion
+
+The state of web development is a splintered, specialized mess. There's no denying it. 
+
+Don't allow the disarray of our craft make you feel less-than. No one knows it all, and reasonable hiring managers don't expect that you do either. If you find an opening at an organization you admire, go ahead and apply&mdash;you might just be the "perfect" candidate.

@@ -2,14 +2,14 @@
   "name": "josh-mobley",
   "version": "1.0.0",
   "devDependencies": {
-    "@types/jquery": "^2.0.33",
+    "@types/jquery": "^3.2.15",
     "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^3.1.1",
-    "gulp-clean-css": "^2.0.13",
-    "gulp-sass": "^2.3.2",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.2.0",
     "gulp-typescript": "^3.0.2",
-    "gulp-uglify": "^2.0.0"
+    "gulp-uglify": "^3.0.0"
   },
   "dependencies": {
     "highlight.js": "^9.8.0",
