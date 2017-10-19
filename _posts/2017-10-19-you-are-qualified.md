@@ -9,7 +9,7 @@ excerpt: "The skills gap is large, talented people are few-and-far-between and p
 
 ### Intro
 
-_** This blog was written back in March, but a recent conversation has pushed me to get it finished. **_
+_**This blog was written back in March, but a recent conversation has pushed me to get it finished.**_
 
 The current state of the technology space is really unique. The skills gap is large, talented people are few-and-far-between and plenty of organizations are scrambling to figure out how to make it work. If you've ever been on the hiring side of developers, designers, or technologists, you quickly realize how slim the choices are.
 
