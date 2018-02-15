@@ -20,32 +20,32 @@ tags: [front-end development, angular, javascript, wordpress]
 </div>
 
 <span class="jux-img">
-    ![Hopscotch Homepage]({{ site.url }}/assets/work/hopscotch/screens/desktop-0.jpg)
+    <span class="desktop-wrapper">![Hopscotch Homepage]({{ site.url }}/assets/work/hopscotch/screens/desktop-0.jpg)</span>
     <span class="top-img">
     ![Hopscotch Homepage]({{ site.url }}/assets/work/hopscotch/screens/mobile-0.png)
     </span>
 </span>
 
 <span class="jux-img">
-    ![Hopscotch Experience]({{ site.url }}/assets/work/hopscotch/screens/desktop-3.jpg)
+    <span class="desktop-wrapper">![Hopscotch Experience]({{ site.url }}/assets/work/hopscotch/screens/desktop-3.jpg)</span>
     <span class="top-img">
     ![Hopscotch Experience]({{ site.url }}/assets/work/hopscotch/screens/mobile-3.png)
     </span>
 </span>
 
 <span class="jux-img">
-    ![Hopscotch Experience]({{ site.url }}/assets/work/hopscotch/screens/desktop-4.jpg)
+    <span class="desktop-wrapper">![Hopscotch Experience]({{ site.url }}/assets/work/hopscotch/screens/desktop-4.jpg)</span>
 </span>
 
 <span class="jux-img">
-    ![Hopscotch Schedule]({{ site.url }}/assets/work/hopscotch/screens/desktop-1.jpg)
+    <span class="desktop-wrapper">![Hopscotch Schedule]({{ site.url }}/assets/work/hopscotch/screens/desktop-1.jpg)</span>
     <span class="top-img">
     ![Hopscotch Schedule]({{ site.url }}/assets/work/hopscotch/screens/mobile-1.png)
     </span>
 </span>
 
 <span class="jux-img">
-    ![Hopscotch Schedule]({{ site.url }}/assets/work/hopscotch/screens/desktop-2.jpg)
+    <span class="desktop-wrapper">![Hopscotch Schedule]({{ site.url }}/assets/work/hopscotch/screens/desktop-2.jpg)</span>
     <span class="top-img">
     ![Hopscotch Schedule]({{ site.url }}/assets/work/hopscotch/screens/mobile-2.png)
     </span>
