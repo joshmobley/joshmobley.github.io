@@ -46,14 +46,6 @@ table{
     }
 }
 
-.advert {
-    border: 1px solid #ccc;
-    padding: 1em;
-    display: inline-block;
-    margin: 0 0 4em 1em;
-    max-width: 100%;
-}
-
 footer{
     background: #111;
     padding: 1em 2em;
@@ -224,12 +216,6 @@ div.skills{
 
 @media screen and (min-width: 800px){
 
-    .advert {
-        margin-left: 25%;
-        position: relative;
-        left: -1em;
-    }
-
     section{
         padding: 4em 15%;
     }
@@ -323,13 +309,6 @@ div.skills{
 }
 
 @media screen and (min-width: 1670px) {
-    
-    .advert {
-        position: absolute;
-        top: 28em;
-        left: 860px;
-    }
-
 }
 
 @media screen and (min-width: 2000px){
