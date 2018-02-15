@@ -217,7 +217,12 @@
     .writing{
         margin: 2em auto 2em 25%;
         width: 70%;
-    
+
+        .advert {
+            display: block;
+            float: left;
+            margin: 0 2em 1em 0;
+        }
     
         .toc-js{
             display: block;
