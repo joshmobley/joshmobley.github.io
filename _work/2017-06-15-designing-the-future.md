@@ -21,9 +21,9 @@ tags: [front-end development, angular, javascript, wordpress]
 
 <span class="jux-img">
     ![Hopscotch Homepage]({{ site.url }}/assets/work/hopscotch/screens/desktop-0.jpg)
-</span>
-<span class="jux-img">
+    <span class="top-img">
     ![Hopscotch Homepage]({{ site.url }}/assets/work/hopscotch/screens/mobile-0.png)
+    </span>
 </span>
 
 <span class="jux-img">
