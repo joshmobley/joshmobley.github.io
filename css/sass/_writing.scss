@@ -1,6 +1,13 @@
 
 .writing, .work{
     padding: 2em 0;
+
+    .advert {
+        display: block;
+        margin: 0 0 4em;
+
+        a { border: none; }
+    }
     
     h1{ 
         margin-bottom: 1em; 
@@ -219,7 +226,6 @@
         width: 70%;
 
         .advert {
-            display: block;
             float: left;
             margin: 0 2em 1em 0;
         }
